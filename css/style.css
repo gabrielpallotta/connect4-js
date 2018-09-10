@@ -1,0 +1,35 @@
+﻿@font-face {
+  font-family: 'Stupid Meeting'; /*a name to be used later*/
+  src: url('sm.ttf'); /*URL to font*/
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+h1 {
+  font-family: 'Stupid Meeting';
+  font-size: 70px;
+}
+
+#stage {
+  position: relative;
+}
+
+#anim-canvas, #board-canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#board-canvas {
+  z-index: 999; /* ¯\_(ツ)_/¯ */
+  border-radius: 20px;
+  cursor: pointer;
+}
